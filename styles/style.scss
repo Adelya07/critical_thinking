@@ -1,0 +1,122 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.main-page {
+    
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 10px;
+        padding-top: 300px;
+        padding-bottom: 134px;
+    }
+    &__critical {
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(/public/jpg/1846966.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    &__student {
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(/public/jpg/63ecf3b115389e850fe40cdb_students-trying-to-focus-on-teacher-delivering-a-lesson.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__teacher {
+        background: linear-gradient( rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.5) ), url(/public/jpg/image_source_3_58b8e6f03df78c353c254467.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__title {
+        margin-bottom: 50px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 72px;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        height: 175px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    &__description {
+        display: block;
+        margin: o auto;
+        margin-bottom: 50px;
+        text-align: center;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        color: rgb(173, 173, 173);
+        
+    }
+
+    &__btn {
+        margin-bottom: 100px;
+        max-width: 250px;
+        padding: 15px 10px;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+        font-size: 24px;
+        display: block;
+        text-decoration: none;
+        margin: 0 auto;
+        text-align: center;
+        text-transform: uppercase;
+        color: rgb(173, 173, 173);
+
+        &:hover {
+            background: rgb(117, 117, 117, 0.3);
+            border-radius: 10px;
+            color: white;
+        }
+    }
+}
+
+.swiper-button-next, .swiper-rtl .swiper-button-prev{
+    background-color: rgb(173, 173, 173, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.5);
+
+    &:after {
+        content: 'next';
+        font-size: 22px;
+    }
+
+    &:hover {
+        background-color: rgb(173, 173, 173, 0.8);
+        color: rgba(255, 255, 255, 0.8);
+        transition: 0.2s ease-in-out;
+    }
+    
+  }
+  .swiper-button-prev, .swiper-rtl .swiper-button-next{
+    background-color: rgb(173, 173, 173, 0.5);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.5);
+
+    &:after {
+        content: 'prev';
+        font-size: 22px;
+    }
+
+    &:hover {
+        background-color: rgb(173, 173, 173, 0.8);
+        color: rgba(255, 255, 255, 0.8);
+        transition: 0.2s ease-in-out;
+    }
+  }

@@ -1,0 +1,227 @@
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-image: url(/public/1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container {
+    max-width: 1160px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.nav {
+    padding-top: 100px;
+    margin-bottom: 200px;
+    &__block {
+        background-color: #EAF2F5;
+        padding: 78px 100px;
+        padding-bottom: 0;
+        border-radius: 48px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin-bottom: 35px;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 46px;
+        text-align: center;
+        color: #22253B;
+    }
+
+    &__item {
+        margin-bottom: 30px;
+        padding: 10px 15px;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 46px;
+        align-items: center;
+        text-align: center;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 44px;
+
+        &-1 {
+            background: #5096FF;
+        }
+
+        &-2 {
+            background: #FFB359;
+        }
+
+        &-3 {
+            background: #FF6F50;
+        }
+
+        &-4 {
+            background: #4BD071;
+        }
+    }
+}
+
+.sentences {
+    background-color: #fff;
+    padding-top: 150px;
+
+
+
+    &__title {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 46px;
+        text-align: center;
+        color: #22253B;
+    }
+
+    &__description {
+        margin-bottom: 100px;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+        color: #4f5054;
+    }
+
+    &__wrap {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center; 
+        margin-bottom: 100px;
+
+    }
+
+    &__item {
+        position: relative;
+        max-width: 200px;
+        width: 100%;
+        background-color: #EAF2F5;
+        padding: 50px 30px;
+        border-radius: 30px;
+        text-decoration: none;
+        color: black;
+        margin-bottom: 100px;
+
+        &:not(:last-child) {
+
+            &::after {
+                position: absolute;
+                content: '';
+                width: 2px;
+                height: 140px;
+                background: #cbebf7;
+                right: -100px;
+                top: 20px;
+            }
+        }
+    }
+
+    &__fig {
+        width: 43px;
+        height: 40px;
+        display: block;
+        margin: 0 auto;
+
+        &-triangle {
+            margin-bottom: 19px;
+            background-image: url(/public/svg/Polygon-r.svg);
+            background-repeat: no-repeat;
+        }
+
+        &-rectangle {
+            margin-bottom: 19px;
+            background-image: url(/public/svg/Rectangle.svg);
+            background-repeat: no-repeat;
+        }
+
+        &-polygon {
+            margin-bottom: 19px;
+            background-image: url(/public/svg/Star.svg);
+            background-repeat: no-repeat;
+        }       
+    }
+
+    &__caption {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 18px;
+        text-align: center;
+    }
+}
+
+.true-false {
+    padding-top: 100px;
+    background-image: url(/public/1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    &__title {
+        margin-bottom: 50px;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 46px;
+        text-align: center;
+        color: #22253B;
+    }
+
+    &__question {
+        margin-bottom: 30px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #4f5054;
+    }
+
+    &__wrap {
+        display: flex;
+        justify-content: center;
+    }
+    &__item {
+        margin-bottom: 50px;
+    }
+    &__btn {
+        margin-bottom: 30px;
+        width: 100px;
+        padding: 5px 10px;
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        cursor: pointer;
+
+        &:not(:last-child) {
+            margin-right: 40px;
+        }
+    }
+
+    &__yes {
+        background-color: #61a761;
+        border-radius: 10px;
+        border: none;
+        color: white;
+    }
+
+    &__no {
+        background-color: #cd7158;
+        border-radius: 10px;
+        border: none;
+        color: white;
+    }
+
+    &__true {
+        font-weight: 400;
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        color: #61a761;
+    }
+}
